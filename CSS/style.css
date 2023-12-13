@@ -60,6 +60,8 @@ a {
     color: var(--color-text);
 }
 
+
+
 /* Lists*/
 
 .list {
@@ -104,9 +106,29 @@ a {
     transition: color 0.3s;
 }
 
+.btn.nav__item>a {
+    color: #001F3F;
+}
+
 .nav__item>a:hover{
     color: #fff;
 }
+
+/* Button */
+
+.btn {
+    border-radius: 40px;
+    border: 0;
+    background-color: #BA4662;
+    cursor: pointer;
+    outline: 0;
+    text-align: center;
+    white-space: nowrap;
+    padding: 1rem;
+    margin-left: 0.5rem;
+  }
+    
+
 
 
 
