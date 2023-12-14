@@ -1,10 +1,10 @@
 @import "./normalize.css";
 
 :root{
-    --color-primary: #001F3F;
-    --color-accent: #FFD700;
-    --color-body: #A9A9A9;
-    --color-text: #F8F9FA;
+    --color-primary: #242582;
+    --color-accent: #f64c72;
+    --color-text: #A9A9A9;
+    --color-body: #F8F9FA;
 }
 
 header {
@@ -21,11 +21,16 @@ img{
     width: 100%;
 }
 
+svg {
+    fill: var(--color-body);
+}
+
 body{
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2rem;
     line-height: 1.5;
-    color: var(--color-text);
+    color:var(--color-text);
+    background-color:var(--color-body);
 }
 
 h1,h2,h3 {
@@ -107,7 +112,7 @@ a {
 }
 
 .btn.nav__item>a {
-    color: #001F3F;
+    color: var(--color-body);
 }
 
 .nav__item>a:hover{
@@ -119,7 +124,7 @@ a {
 .btn {
     border-radius: 40px;
     border: 0;
-    background-color: #BA4662;
+    background-color: var(--color-accent);
     cursor: pointer;
     outline: 0;
     text-align: center;
@@ -127,6 +132,35 @@ a {
     padding: 1rem;
     margin-left: 0.5rem;
   }
+
+/* Blocks */
+
+.block {
+    --padding-vertical: 6rem;
+    padding: var(--padding-vertical) 2rem;
+    border: 2px solid red;
+}
+
+.block__header {
+    text-align: center;
+}
+
+.block__heading {
+    margin-top: 0;
+}
+
+.block--primary {
+    background: var(--color-primary);
+}
+
+.block--primary h2 {
+    color: var(--color-accent);
+}
+
+.block--skewed-left {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
     
 
 
