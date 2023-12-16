@@ -2,13 +2,9 @@
 
 :root{
     --color-primary: #242582;
-    --color-accent: #f64c72;
-    --color-text: #A9A9A9;
+    --color-accent: rgb(246, 76, 114);
+    --color-text: rgb(216, 211, 211);
     --color-body: #F8F9FA;
-}
-
-header {
-    display: block;
 }
 
 /* Typography */
@@ -16,6 +12,8 @@ header {
 html{
     font-size: 62.5%;
 }
+
+
 
 img{
     width: 100%;
@@ -116,6 +114,10 @@ a {
 
 /* Nav Bar */
 
+header {
+    display: block;
+}
+
 .nav {
     background: var(--color-primary);
     display: flex;
@@ -157,15 +159,6 @@ a {
     color: #fff;
 }
 
-button.nav>a {
-    color: var(--color-body);
-    transition: color 0.3s;
-}
-
-.btn.nav__item>a:hover {
-    color: #fff;
-}
-
 .nav__toggler {
     opacity: 0.5;
     transition: box-shadow 0.15s;
@@ -174,7 +167,7 @@ button.nav>a {
 
 .nav.collapsible--expanded .nav__toggler {
     opacity: 1;
-    box-shadow: 0 0 0 3px #666;
+    box-shadow: 0 0 0 3px var(--color-accent);
     border-radius: 5px;
 }
 
@@ -214,7 +207,19 @@ button.nav>a {
     white-space: nowrap;
     padding: 1rem;
     margin-left: 0.5rem;
+    transition: all 0.3s;
   }
+
+  .btn:hover {
+    color: #fff;
+    background: #f32f5a;
+  }
+
+  .btn--streched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
 
 /* Blocks */
 
@@ -236,8 +241,8 @@ button.nav>a {
     background: var(--color-primary);
 }
 
-.block--primary h2 {
-    color: var(--color-accent);
+.block--primary .block__heading{
+    color: var(--color-body);
 }
 
 .block--skewed-left {
@@ -249,6 +254,57 @@ button.nav>a {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+/* Grids */
+
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width:768px) {
+    .grid--1x2  {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Hero */
+
+.hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline {
+    font-size: 2rem;
+    color: var(--color-text);
+    letter-spacing: 1px;
+    margin: 2rem 0 4rem;
+}
+
+.hero__image { 
+    width: 100%;
+}
+
+.hero .btn {
+    width: 400px;
+}
+
+@media screen and (min-width: 768px ) {
+
+    .hero {
+        padding-top: 0;
+    }
+    .hero__content {
+        text-align: left;
+        align-self: center;
+    }
+    .hero__tagline {
+        margin: 0rem 0 4rem;
+    }
+}
+
+
+
+
 
 
 
