@@ -2,8 +2,8 @@
 
 :root{
     --color-primary: #242582;
-    --color-accent: rgb(246, 76, 114);
-    --color-text: rgb(216, 211, 211);
+    --color-accent: rgb(243, 84, 119);
+    --color-text: rgb(200, 196, 196);
     --color-body: #F8F9FA;
 }
 
@@ -12,8 +12,6 @@
 html{
     font-size: 62.5%;
 }
-
-
 
 img{
     width: 100%;
