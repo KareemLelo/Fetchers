@@ -9,53 +9,62 @@
   </head>
   <body>
     <header>
-      <nav class="nav collapsible">
-        <a href="/" aria-label="Fetcher" class="nav__brand">
-          <img class="svg" src="images/TestLogo.svg" alt="" />
-        </a>
-        <svg class="icon nav__toggler icon--white">
-          <use xlink:href="images/sprite.svg#menu"></use>
-        </svg>
-        <ul class="list nav__list collapsible__content">
-          <li class="nav__item">
-            <a href="http://" target="_blank">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="http://" target="_blank">About Us</a>
-          </li>
-          <li class="nav__item">
-            <a href="http://" target="_blank">Contact</a>
-          </li>
-        </ul>
-        <ul class="list nav__list collapsible__content">
-          <button class="btn nav__item nav__register">
-            <a href="http://" target="_blank">Sign in</a>
-          </button>
-          <button class="btn nav__item nav__register">
-            <a href="http://" target="_blank">Sign up</a>
-          </button>
-        </ul>
-      </nav>
-    </header>
-    <section class="block block--primary block--skewed-left hero">
-      <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
-          <h1 class="block__heading">Fetchers for Quick Shipping</h1>
-          <p class="hero__tagline">
-            Have access to products all over the world
-          </p>
-          <a href="/" class="btn btn--streched">Get Started</a>
-        </header>
-        <img class="hero_image" src="images/MainPic.png" alt="" />
+      <div class="container">
+        <nav class="nav collapsible">
+          <a href="/" aria-label="Fetcher" class="nav__brand">
+            <img class="svg" src="images/TestLogo.svg" alt="" />
+          </a>
+          <svg class="icon nav__toggler icon--white">
+            <use xlink:href="images/sprite.svg#menu"></use>
+          </svg>
+          <ul class="list nav__list collapsible__content">
+            <li class="nav__item">
+              <a href="http://" target="_blank">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="http://" target="_blank">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="http://" target="_blank">Contact</a>
+            </li>
+          </ul>
+          <ul class="list nav__list collapsible__content">
+            <button class="btn nav__item nav__register">
+              <a href="http://" target="_blank">Sign in</a>
+            </button>
+            <button class="btn nav__item nav__register">
+              <a href="http://" target="_blank">Sign up</a>
+            </button>
+          </ul>
+        </nav>
       </div>
-    </section>
-    <section class="block container">
-      <header class="block__header">
+    </header>
+    
+    <header class="block--skewed-left">
+      <div class="container">
+        <section class="block block--primary hero">
+          <div class="container grid grid--1x2">
+            <header class="block__header hero__content">
+              <h1 class="block__heading">Fetchers for Quick Shipping</h1>
+              <p class="hero__tagline">
+                Have access to products all over the world
+              </p>
+              <a href="/" class="btn btn--streched">Get Started</a>
+            </header>
+            <img class="hero_image" src="images/MainPic.png" alt="" />
+          </div>
+        </section>
+        <section class="block container">
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="block__header">
         <h2 class="block__heading">What are we Offering you</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint
         </p>
-      </header>
+      </section>
         <article class="grid grid--1x2 feature">
           <div class="feature__content">
             <span class="icon-container">
@@ -112,44 +121,49 @@
         </article>
       </section>      
     </section>
-    <section class="block ">
-      <header class="block__header">
-        <h2 class="block__heading">What our Customers are Saying</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, eius?</p>
-      </header>
-      <div class="container">
-        <div class="card testimonial">
-          <div class="grid grid--1x2">
-            <div class="testimonial__image">
-              <img src="images/testimonial.jpg" alt="Happy simling Customer">
-              <span class="icon-container icon-container--accent">
-                <svg class="icon icon--white icon--small">
-                  <use xlink:href="images/sprite.svg#quotes"></use>
-                </svg>
-              </span>
+    </div>
+
+    <div class="container">
+      <section class="block ">
+        <section class="block__header">
+          <h2 class="block__heading">What our Customers are Saying</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, eius?</p>
+        </section>
+        <div class="container">
+          <div class="card testimonial">
+            <div class="grid grid--1x2">
+              <div class="testimonial__image">
+                <img src="images/testimonial.jpg" alt="Happy simling Customer">
+                <span class="icon-container icon-container--accent">
+                  <svg class="icon icon--white icon--small">
+                    <use xlink:href="images/sprite.svg#quotes"></use>
+                  </svg>
+                </span>
+              </div>
+              <blockquote class="quote">
+                <p class="quote__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus in magnam suscipit amet ratione, quisquam ipsam quia porro exercitationem. Sed necessitatibus, fugit fuga magni optio cum ipsa iusto id unde! Enim, doloribus totam. Atque eius neque, culpa minima aliquam nemo.
+                </p>
+                <footer>
+                  <div class="media">
+                    <div class="media__image">
+                      <svg class="icon icon--primary quote__line">
+                        <use xlink:href="images/sprite.svg#line"></use>
+                      </svg>
+                    </div>
+                    <div class="media__body">
+                      <h3 class="media__title quote__author">John Smith</h3>
+                      <p class="quote__organization">ABC Company</p>
+                    </div>
+                  </div>
+                </footer>
+              </blockquote>
             </div>
-            <blockquote class="quote">
-              <p class="quote__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus in magnam suscipit amet ratione, quisquam ipsam quia porro exercitationem. Sed necessitatibus, fugit fuga magni optio cum ipsa iusto id unde! Enim, doloribus totam. Atque eius neque, culpa minima aliquam nemo.
-              </p>
-              <footer>
-                <div class="media">
-                  <div class="media__image">
-                    <svg class="icon icon--primary quote__line">
-                      <use xlink:href="images/sprite.svg#line"></use>
-                    </svg>
-                  </div>
-                  <div class="media__body">
-                    <h3 class="media__title quote__author">John Smith</h3>
-                    <p class="quote__organization">ABC Company</p>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+
   </body>
   <script src="js/main.js"></script>
 </html>
