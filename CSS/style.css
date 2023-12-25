@@ -347,6 +347,41 @@ header {
     }
 }
 
+/* Media */
+
+.media {
+    display: flex;
+    margin-bottom: 4rem;
+  }
+  
+  .media__title {
+    color: var(--color-primary);
+    margin-top: 0;
+  }
+  
+  .media__body {
+    margin: 0 2rem;
+  }
+  
+  .media__image {
+    margin-top: 1rem;
+  }
+
+/* Showcase Block */
+
+@media screen and (min-width: 768px) {
+    .block-showcase .grid {
+      grid-template-columns: 50% 50%;
+    }
+    .block-showcase__image {
+      justify-self: end;
+    }
+    .block-showcase__image>img {
+      width: auto;
+      max-width: 700px;
+    }
+  }
+
 /* Testimonial */
 
 .testimonial {
@@ -400,7 +435,7 @@ header {
 }
   
 .quote__organization {
-    color: var(--color-headings);
+    color: var(--color-text);
     opacity: 0.4;
     font-size: 1.5rem;
     font-style: normal;
